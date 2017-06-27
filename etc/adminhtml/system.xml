@@ -1,0 +1,23 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <system>
+        <tab id="helpcrunch" translate="label" sortOrder="50">
+            <label>HelpCrunch</label>
+        </tab>
+
+        <section id="helpcrunch_block_config" translate="label" type="text" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>HelpCrunch Widget</label>
+            <tab>helpcrunch</tab>
+            <resource>HelpCrunch_HelpCrunch::mymodule</resource>
+
+            <group id="general" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>HelpCrunch Widget Settings</label>
+                <frontend_model>HelpCrunch\HelpCrunch\Block\System\Config\Fieldset\GeneralGroup</frontend_model>
+                <field id="settings" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <validate>validate-no-empty</validate>
+                    <label>HelpCrunch settings string</label>
+                    <frontend_model>Magento\Config\Block\System\Config\Form\Field</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,36 @@
+#helpcrunch-settings-comment {
+  background: url('https://helpcrunch.com/img/layout/menu/logo.svg') no-repeat 100% 0;
+  background-size: 150px auto;
+  padding-top: 20px;
+}
+
+#helpcrunch-settings-comment h3 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+#helpcrunch-settings-comment li {
+  list-style: initial;
+  margin: 5px 0 8px 15px;
+}
+
+#helpcrunch-settings-comment ul {
+  margin-bottom: 10px;
+}
+
+#helpcrunch_block_config_general label {
+  font-size: 1.1em;
+  position: relative;
+  top: 6px;
+}
+
+#helpcrunch_block_config_general input {
+  width: 400px;
+  margin-top: 4px;
+  height: 2em;
+  font-size: 1em;
+}
+
+#helpcrunch_block_config_general .label span[data-config-scope]::before {
+  display: none;
+}
